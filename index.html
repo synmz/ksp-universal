@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KSP Universal Hausmeister Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        :root {
+            --banner-height: 44px;
+        }
+
+        .site-banner {
+            height: var(--banner-height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1090; /* above navbar */
+        }
+
+        .navbar.fixed-top {
+            top: var(--banner-height);
+        }
+    </style>
+</head>
+<body>
+
+<div class="site-banner bg-warning-subtle border-bottom fixed-top px-3 text-center">
+    <small class="fw-semibold">
+        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+        Website in Bearbeitung – dies ist eine Vorab-Version.
+    </small>
+</div>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="KSPUniversal_497x186.png" alt="Logo" width="49" height="18" class="d-inline-block align-text-top">
+                KSP Universal &ndash; Hausmeister Service
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#leistungen">Leistungen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ueber-uns">Über uns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ablauf">Ablauf</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pt-5" style="padding-top: calc(3rem + var(--banner-height));">
+    <div id="home" class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="KSP_Universal_500x500.png"
+                     class="d-block mx-lg-auto img-fluid rounded-3"
+                     alt="KSP Universal – Hausmeisterservice" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                    KSP Universal – Ihr zuverlässiger Hausmeisterservice
+                </h1>
+                <p class="lead">Wir kümmern uns um Ihre Immobilie, als wäre sie unsere eigene. Pflege, Wartung und
+                    Instandhaltung aus einer Hand – zuverlässig, sauber, termingerecht.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="#kontakt" class="btn btn-primary btn-lg px-4 me-md-2">Kontaktieren</a>
+                    <a href="#leistungen" class="btn btn-outline-secondary btn-lg px-4">Leistungen ansehen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leistungen -->
+    <section id="leistungen" class="py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="fw-bold">Leistungen</h2>
+                    <p class="text-body-secondary mb-0">Alles, was Ihre Immobilie braucht – zuverlässig, sauber,
+                        termingerecht.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-tools fs-4"></i>
+                                <h3 class="h5 mb-0">Reparaturen &amp; Ausbesserungsarbeiten</h3>
+                            </div>
+                            <p class="mb-0 text-body-secondary">Kleine Reparaturen schnell und sauber erledigt – damit alles zuverlässig funktioniert.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-brush fs-4"></i>
+                                <h3 class="h5 mb-0">Kleine Verputz- &amp; Renovierungsarbeiten</h3>
+                            </div>
+                            <p class="mb-0 text-body-secondary">Ausbessern, spachteln, streichen – für ein gepflegtes Erscheinungsbild.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-droplet fs-4"></i>
+                                <h3 class="h5 mb-0">Wasserschaden-Sanierung</h3>
+                            </div>
+                            <p class="mb-0 text-body-secondary">Große Erfahrung bei Wasserschäden – schnelle Maßnahmen und saubere Wiederherstellung.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-fire fs-4"></i>
+                                <h3 class="h5 mb-0">Brandschaden-Sanierung</h3>
+                            </div>
+                            <p class="mb-0 text-body-secondary">Erfahren in der Brandschadensanierung – strukturiert, zuverlässig und lösungsorientiert.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-tree fs-4"></i>
+                                <h3 class="h5 mb-0">Garten- &amp; Terrassenarbeiten</h3>
+                            </div>
+                            <p class="mb-0 text-body-secondary">Pflege und Instandhaltung im Außenbereich – für saubere Wege und ordentliche Flächen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-box-seam fs-4"></i>
+                                <h3 class="h5 mb-0">Kleine Entrümpelungen</h3>
+                            </div>
+                            <p class="mb-0 text-body-secondary">Keller, Abstellräume oder einzelne Bereiche – schnell, diskret und ordentlich.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col">
+                    <div class="alert alert-light border mb-0">
+                        Sie brauchen etwas Spezielles? Wir stellen Leistungen flexibel nach Ihrem Objekt zusammen.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Über uns -->
+    <section id="ueber-uns" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-6">
+                    <h2 class="fw-bold">Über KSP Universal</h2>
+                    <p class="text-body-secondary">
+                        KSP Universal steht für verlässliche Objektbetreuung: klare Absprachen, saubere Ausführung und
+                        kurze Wege.
+                        Wir arbeiten strukturiert, melden Auffälligkeiten proaktiv und kümmern uns darum, dass Ihre
+                        Immobilie im Alltag reibungslos läuft.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <div class="p-3 border rounded-3 h-100">
+                                <div class="d-flex align-items-center gap-2 mb-1">
+                                    <i class="bi bi-clock fs-5"></i>
+                                    <h3 class="h6 mb-0">Pünktlich &amp; planbar</h3>
+                                </div>
+                                <p class="mb-0 text-body-secondary">Feste Termine und saubere Übergaben – ohne
+                                    Überraschungen.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="p-3 border rounded-3 h-100">
+                                <div class="d-flex align-items-center gap-2 mb-1">
+                                    <i class="bi bi-chat-dots fs-5"></i>
+                                    <h3 class="h6 mb-0">Klare Kommunikation</h3>
+                                </div>
+                                <p class="mb-0 text-body-secondary">Kurz, verständlich, lösungsorientiert – damit Sie
+                                    jederzeit den Überblick behalten.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="p-4 bg-body-tertiary rounded-3 border">
+                        <h3 class="h5 fw-bold">Warum Kunden uns wählen</h3>
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex gap-2 mb-2">
+                                <i class="bi bi-check2-circle mt-1"></i>
+                                <span>Saubere Arbeit und respektvoller Umgang mit Bewohnern</span>
+                            </li>
+                            <li class="d-flex gap-2 mb-2">
+                                <i class="bi bi-check2-circle mt-1"></i>
+                                <span>Proaktive Meldung von Schäden, bevor sie teuer werden</span>
+                            </li>
+                            <li class="d-flex gap-2 mb-2">
+                                <i class="bi bi-check2-circle mt-1"></i>
+                                <span>Flexible Pakete für Einfamilienhäuser, Mehrfamilienhäuser und Gewerbe</span>
+                            </li>
+                            <li class="d-flex gap-2">
+                                <i class="bi bi-check2-circle mt-1"></i>
+                                <span>Transparent: kurze Protokolle, klare Absprachen, nachvollziehbare Leistungen</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ablauf -->
+    <section id="ablauf" class="py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="fw-bold">So läuft die Zusammenarbeit</h2>
+                    <p class="text-body-secondary mb-0">Ein klarer Prozess – damit Sie schnell Ergebnisse sehen.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="p-4 border rounded-3 h-100 bg-white">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="badge text-bg-primary rounded-pill">1</span>
+                            <h3 class="h6 mb-0">Anfrage</h3>
+                        </div>
+                        <p class="mb-0 text-body-secondary">Kurz schreiben oder anrufen – wir melden uns schnell
+                            zurück.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="p-4 border rounded-3 h-100 bg-white">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="badge text-bg-primary rounded-pill">2</span>
+                            <h3 class="h6 mb-0">Vor-Ort-Termin</h3>
+                        </div>
+                        <p class="mb-0 text-body-secondary">Wir schauen uns Objekt und Anforderungen an – realistisch
+                            und praxisnah.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="p-4 border rounded-3 h-100 bg-white">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="badge text-bg-primary rounded-pill">3</span>
+                            <h3 class="h6 mb-0">Angebot</h3>
+                        </div>
+                        <p class="mb-0 text-body-secondary">Sie erhalten ein klares Angebot – Leistungen, Intervalle,
+                            Preise.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="p-4 border rounded-3 h-100 bg-white">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="badge text-bg-primary rounded-pill">4</span>
+                            <h3 class="h6 mb-0">Umsetzung</h3>
+                        </div>
+                        <p class="mb-0 text-body-secondary">Wir starten – zuverlässig, dokumentiert und mit sauberer
+                            Kommunikation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Referenzen / Stimmen -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="fw-bold">Was Kunden sagen</h2>
+                    <p class="text-body-secondary mb-0">Ehrliches Feedback ist unser Maßstab.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-lg-4">
+                    <div class="p-4 border rounded-3 h-100">
+                        <div class="d-flex gap-2 align-items-center mb-2">
+                            <i class="bi bi-quote fs-3"></i>
+                            <h3 class="h6 mb-0">Zuverlässig und sauber</h3>
+                        </div>
+                        <p class="mb-0 text-body-secondary">„Absprachen werden eingehalten, alles ist ordentlich
+                            dokumentiert. Genau so muss es sein.“</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="p-4 border rounded-3 h-100">
+                        <div class="d-flex gap-2 align-items-center mb-2">
+                            <i class="bi bi-quote fs-3"></i>
+                            <h3 class="h6 mb-0">Schnelle Reaktion</h3>
+                        </div>
+                        <p class="mb-0 text-body-secondary">„Bei Problemen kommt sofort eine Rückmeldung – und eine
+                            Lösung.“</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="p-4 border rounded-3 h-100">
+                        <div class="d-flex gap-2 align-items-center mb-2">
+                            <i class="bi bi-quote fs-3"></i>
+                            <h3 class="h6 mb-0">Professionell im Umgang</h3>
+                        </div>
+                        <p class="mb-0 text-body-secondary">„Freundlich zu den Bewohnern, professionell zur Verwaltung.
+                            Passt.“</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="fw-bold">FAQ</h2>
+                    <p class="text-body-secondary mb-0">Die wichtigsten Fragen – kurz beantwortet.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqOneHeader">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                                    Welche Regionen betreuen Sie?
+                                </button>
+                            </h3>
+                            <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="faqOneHeader"
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nach Absprache betreuen wir Objekte regional. Teilen Sie uns einfach Adresse und
+                                    Objektart mit – wir sagen schnell, ob es passt.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqTwoHeader">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                    Gibt es feste Intervalle oder ist das flexibel?
+                                </button>
+                            </h3>
+                            <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwoHeader"
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Beides: Wir arbeiten mit festen Intervallen (z. B. wöchentlich/14-tägig/monatlich)
+                                    und ergänzen flexibel nach Bedarf.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqThreeHeader">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                    Wie schnell reagieren Sie bei Notfällen?
+                                </button>
+                            </h3>
+                            <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqThreeHeader"
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Bei dringenden Fällen reagieren wir schnell und stimmen das weitere Vorgehen direkt
+                                    mit Ihnen ab.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqFourHeader">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                                    Erstellen Sie Protokolle oder Dokumentationen?
+                                </button>
+                            </h3>
+                            <div id="faqFour" class="accordion-collapse collapse" aria-labelledby="faqFourHeader"
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ja – auf Wunsch mit kurzen Protokollen, Fotos und Hinweisen zu Auffälligkeiten.
+                                    Transparent und nachvollziehbar.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="fw-bold">Kontakt</h2>
+                    <p class="text-body-secondary mb-0">Schreiben Sie uns – wir melden uns zeitnah zurück.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="p-4 border rounded-3 h-100">
+                        <h3 class="h5 fw-bold">KSP Universal</h3>
+                        <p class="mb-1 fw-semibold">Ansprechpartner: Perica Zlojo</p>
+                        <p class="text-body-secondary mb-3">Hausmeisterservice – zuverlässig, sauber, termingerecht.</p>
+
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="d-flex gap-2 align-items-start">
+                                    <i class="bi bi-geo-alt fs-5"></i>
+                                    <div>
+                                        <div class="fw-semibold">Adresse</div>
+                                        <div class="text-body-secondary">Martin Luther str. 80, 70771 Leinfelden-Echterdingen</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex gap-2 align-items-start">
+                                    <i class="bi bi-telephone fs-5"></i>
+                                    <div>
+                                        <div class="fw-semibold">Telefon</div>
+                                        <div class="text-body-secondary">+49 176 40491025</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex gap-2 align-items-start">
+                                    <i class="bi bi-envelope fs-5"></i>
+                                    <div>
+                                        <div class="fw-semibold">E-Mail</div>
+                                        <div class="text-body-secondary">kontakt@ksp-universal.de</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex gap-2 align-items-start">
+                                    <i class="bi bi-clock fs-5"></i>
+                                    <div>
+                                        <div class="fw-semibold">Erreichbarkeit</div>
+                                        <div class="text-body-secondary">Mo–Fr: 08:00–18:00 (Notfälle nach Absprache)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="row g-2">
+                            <div class="col-12 col-md-6 d-grid">
+                                <a class="btn btn-outline-primary" href="#home"><i class="bi bi-arrow-up"></i> Nach oben</a>
+                            </div>
+                            <div class="col-12 col-md-6 d-grid">
+                                <a class="btn btn-outline-secondary" href="#leistungen"><i class="bi bi-list-check"></i>
+                                    Leistungen</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-body-tertiary border-top">
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-12 col-md-6">
+                    <div class="text-body-secondary">© <span id="year"></span> KSP Universal – Hausmeister Service</div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="d-flex gap-3 justify-content-md-end">
+                        <a class="link-secondary text-decoration-none" href="#">Impressum</a>
+                        <a class="link-secondary text-decoration-none" href="#">Datenschutz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear().toString();
+    </script>
+</body>
+</html>
